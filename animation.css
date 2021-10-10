@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+   
+}
+
+body{
+    text-align: center;
+    background-color: rgb(45, 133, 184);
+    line-height: 1.6;
+    font-family:Arial, Helvetica, sans-serif;
+  
+    width: 100%;
+    color: #fff;
+
+   
+}
+
+
+.header{
+    height: 300px;
+  position: relative
+  ;
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+   
+}
+
+@keyframes myanimation{
+    0%{top: -50px;}
+    100%{top: 200px;}
+}
+
+.contanier{
+  
+    
+    position: relative;
+    animation-name: contaniner;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes contaniner{
+    0%{left: -1000px;}
+    100%{left: 0;}
+}
+
+.btn{
+    margin-top: 20px;
+    border: 1px solid rgb(253, 249, 249);
+    padding: 20px 10px;
+    background-color: rgb(45, 133, 184);
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    opacity: 0;
+    animation-name:btn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+button:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+
+
